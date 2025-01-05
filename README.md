@@ -5,7 +5,7 @@ The biggest collection of cybersecurity resources
 Welcome to the **Project Kira** repository! 🚀 This repository aims to be the largest and most comprehensive collection of cybersecurity resources, covering various domains such as Web Security, Malware Analysis, CTFs, Certifications, Tools, OSINT, and much more.
 
 ## 📖 Table of Contents
-- [About](#about)
+- [About](#About)
 - [How to Use](#how-to-use)
 - [Contributing](#contributing)
 - [License](#license)
