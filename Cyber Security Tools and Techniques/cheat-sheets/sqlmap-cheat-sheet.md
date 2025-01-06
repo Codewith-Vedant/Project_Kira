@@ -90,4 +90,4 @@ For further learning about SQLMap and SQL injection, check out the following res
 - [SQLMap GitHub Repository](https://github.com/sqlmapproject/sqlmap)
 - [TryHackMe SQLMap Room](https://tryhackme.com/room/sqlmap)
 - [PentesterLab SQL Injection Exercises](https://pentesterlab.com/exercises/from_sqli_to_shell/course)
-- [HackTricks SQL Injection Wiki](https://book.hacktricks.xyz/pentesting-web/sql-injection)
+- [SQLMap Advaced Commands]([https://book.hacktricks.xyz/pentesting-web/sql-injection](https://medium.com/@exploitheaven/mastering-sqlmap-advanced-commands-for-ethical-hacking-e53d599575f8))
